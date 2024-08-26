@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Vinyl&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+
+body {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 12.5rem;
+  background-color: rgb(160, 212, 117);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  color: cadetblue;
+  background-color: #7dffbe;
+  border: 1px solid rgb(232, 248, 5);
+}
+
+.clarusway {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: palevioletred;
+  font-size: 6.25rem;
+}
+
+.lessoncard {
+  flex-basis: calc(33.333% - 2rem);
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  gap: 2rem;
+  padding: 2rem;
+  margin-top: 1rem;
+  color: rgb(78, 151, 4);
+  background-color: rgb(170, 224, 231);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  gap: 2rem;
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  padding-top: 4rem;
+  height: 41rem;
+}
+img {
+  width: 6.125rem;
+  height: 6rem;
+}
+
+.lessoncard:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  color: black;
+}
+
+.footer-text {
+  text-align: center;
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(129, 7, 103);
+  background-color: cadetblue;
+}
+
+.footer-text:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}

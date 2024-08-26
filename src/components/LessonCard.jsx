@@ -2,11 +2,18 @@
 
 import React from 'react'
 
-const LessonCard = () => {
+const LessonCard = ({name, hour, image}) => {
   return (
-    <div>
+    <div className='lessoncard' >
+      <img  src={image} alt="" />
+
+      <div>
+        <p>Lesson Name : {name}</p>
+        <p>Lesson Hour :{hour}</p>
       
+      </div>
     </div>
+    
   )
 }
 
