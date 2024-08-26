@@ -9,6 +9,7 @@
 
 body {
   width: 100%;
+  background-color: rgba(225, 235, 93, 0.5);
 }
 
 .header {
@@ -21,6 +22,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .title {
@@ -65,7 +67,7 @@ body {
   background-color: #85ffbd;
   background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
   padding-top: 4rem;
-  height: 41rem;
+  height: auto;
 }
 img {
   width: 6.125rem;
@@ -88,8 +90,18 @@ img {
   background-color: cadetblue;
 }
 
-.footer-text:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
+.footer {
+  margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .clarusway {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .clarusway {
+    font-size: 4rem;
+  }
 }
